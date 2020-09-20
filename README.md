@@ -44,6 +44,8 @@ This API Automation framework depends on the following external libraries.
 * Download and Install Git v2.0+
 
 ## Setup Instructions
+You need to have the following test execution setup:
+![screenshot](/images/test_execution_setup.png)
 
 ## How to Write Test Cases
 
