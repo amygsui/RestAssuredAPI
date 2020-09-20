@@ -1,3 +1,5 @@
+package testcases;
+
 import io.restassured.RestAssured;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
