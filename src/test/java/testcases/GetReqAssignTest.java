@@ -29,12 +29,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
-        System.out.println("All headers: ");
+        System.out.println("=========================================================");
+        System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String contentType = headers.getValue("Content-Type");
         String server = headers.getValue("Server");
@@ -45,15 +47,19 @@ public class GetReqAssignTest {
         System.out.println("Date: " + date);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
+        System.out.println("=========================================================");
 
         // Extract 3 values using JsonPath and jsonpath Query
         String flavorNameValue = JsonPath.read(responseBody, "$.name");
         int sizeValue = JsonPath.read(responseBody, "$.size");
         int naturalGiftPowerValue = JsonPath.read(responseBody, "$.natural_gift_power");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Flavor of berry 1: " + flavorNameValue);
         System.out.println("Size of berry 1: " + sizeValue);
         System.out.println("Natural Gift Power of berry 1: " + naturalGiftPowerValue);
@@ -76,12 +82,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("All headers: ");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String contentEncoding = headers.getValue("Content-Encoding");
         String age = headers.getValue("Age");
@@ -92,6 +100,7 @@ public class GetReqAssignTest {
         System.out.println("Date: " + date);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -101,6 +110,8 @@ public class GetReqAssignTest {
         String pokemonSpeciesValue = JsonPath.read(responseBody, "$.pokemon_species[0].name");
         String languageValue = JsonPath.read(responseBody, "$.names[2].language.name");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Evolution trigger: " + triggerNameValue);
         System.out.println("Evolving Pokemon Species: " + pokemonSpeciesValue);
         System.out.println("Language: " + languageValue);
@@ -122,12 +133,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String contentLength = headers.getValue("Content-Length");
         String connection = headers.getValue("Connection");
@@ -138,6 +151,7 @@ public class GetReqAssignTest {
         System.out.println("Set-Cookie: " + setCookie);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -147,6 +161,8 @@ public class GetReqAssignTest {
         String pokemonSpeciesValue = JsonPath.read(responseBody, "$.pokemon_species[0].name");
         String pokemonTypeValue = JsonPath.read(responseBody, "$.types[0].name");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Evolution trigger: " + regionNameValue);
         System.out.println("Evolving Pokemon Species: " + pokemonSpeciesValue);
         System.out.println("Language: " + pokemonTypeValue);
@@ -169,12 +185,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String accessControl = headers.getValue("Access-Control");
         String cacheControl = headers.getValue("Cache-Control");
@@ -185,6 +203,7 @@ public class GetReqAssignTest {
         System.out.println("Content Encoding: " + contentEncoding);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -194,6 +213,8 @@ public class GetReqAssignTest {
         String pokedexEntry1Value = JsonPath.read(responseBody, "$.pokemon_entries[0].pokemon_species.name");
         String pokedexVersionGroupValue = JsonPath.read(responseBody, "$.version_groups[0].name");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Pokedex Region Name: " + nameValue);
         System.out.println("Pokedex Entry 1: " + pokedexEntry1Value);
         System.out.println("Pokedex Version Group: " + pokedexVersionGroupValue);
@@ -216,12 +237,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String date = headers.getValue("Date");
         String contentType = headers.getValue("Content-Type");
@@ -232,6 +255,7 @@ public class GetReqAssignTest {
         System.out.println("Transfer Encoding: " + transferEncoding);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -241,6 +265,8 @@ public class GetReqAssignTest {
         String versionURLValue = JsonPath.read(responseBody, "$.names[0].language.url");
         String pokedexVersionGroupValue = JsonPath.read(responseBody, "$.version_group.name");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Version Name: " + nameValue);
         System.out.println("Version URL: " + versionURLValue);
         System.out.println("Version Group: " + pokedexVersionGroupValue);
@@ -263,12 +289,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String date = headers.getValue("Date");
         String contentType = headers.getValue("Content-Type");
@@ -279,6 +307,7 @@ public class GetReqAssignTest {
         System.out.println("Transfer Encoding: " + transferEncoding);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -288,6 +317,8 @@ public class GetReqAssignTest {
         String itemCategoryName = JsonPath.read(responseBody, "$.category.name");
         int costValue = JsonPath.read(responseBody, "$.cost");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Item Name: " + itemNameValue);
         System.out.println("Item Category: " + itemCategoryName);
         System.out.println("Cost of Item: " + costValue);
@@ -310,12 +341,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String date = headers.getValue("Date");
         String contentType = headers.getValue("Content-Type");
@@ -326,6 +359,7 @@ public class GetReqAssignTest {
         System.out.println("Transfer Encoding: " + transferEncoding);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -335,6 +369,8 @@ public class GetReqAssignTest {
         String itemURLValue = JsonPath.read(responseBody, "$.items[0].url");
         String pocketValue = JsonPath.read(responseBody, "$.pocket.name");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Item Category Type: " + itemCategoryValue);
         System.out.println("Item URL: " + itemURLValue);
         System.out.println("Pocket/Usage: " + pocketValue);
@@ -357,12 +393,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String date = headers.getValue("Date");
         String contentType = headers.getValue("Content-Type");
@@ -373,6 +411,7 @@ public class GetReqAssignTest {
         System.out.println("Transfer Encoding: " + transferEncoding);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -382,6 +421,8 @@ public class GetReqAssignTest {
         String regionLocationValue = JsonPath.read(responseBody, "$.locations[0].name");
         String generationValue = JsonPath.read(responseBody, "$.main_generation.name");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Region Name: " + regionValue);
         System.out.println("Location in Region: " + regionLocationValue);
         System.out.println("Generation of Region: " + generationValue);
@@ -404,12 +445,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String date = headers.getValue("Date");
         String contentType = headers.getValue("Content-Type");
@@ -420,6 +463,7 @@ public class GetReqAssignTest {
         System.out.println("Transfer Encoding: " + transferEncoding);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -429,6 +473,8 @@ public class GetReqAssignTest {
         int moveCostValue = JsonPath.read(responseBody, "$.pp");
         String moveClassValue = JsonPath.read(responseBody, "$.damage_class.name");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Move Name: " + moveValue);
         System.out.println("Move Cost: " + moveCostValue);
         System.out.println("Move Damage Type: " + moveClassValue);
@@ -451,12 +497,14 @@ public class GetReqAssignTest {
         System.out.println("Status Code: " + response.statusCode());
 
         // Getting all headers
+        System.out.println("=========================================================");
         System.out.println("\nAll headers: \n");
         Headers headers = response.headers();
         String entireHeader = headers.toString();
         System.out.println(entireHeader);
 
         // Getting 3 specific headers + key/value pairs
+        System.out.println("=========================================================");
         System.out.println("\nHere are three headers: \n");
         String date = headers.getValue("Date");
         String contentType = headers.getValue("Content-Type");
@@ -467,6 +515,7 @@ public class GetReqAssignTest {
         System.out.println("Transfer Encoding: " + transferEncoding);
 
         // Getting response body
+        System.out.println("=========================================================");
         System.out.println("\nResponse Body: \n");
         String responseBody = response.getBody().prettyPrint();
         System.out.println(responseBody);
@@ -476,6 +525,8 @@ public class GetReqAssignTest {
         int pokemonWeightValue = JsonPath.read(responseBody, "$.weight");
         String abilityValue = JsonPath.read(responseBody, "$.abilities[0].ability.name");
 
+        System.out.println("=========================================================");
+        System.out.println("\nHere are 3 JsonPath queries: \n");
         System.out.println("Pokemon Name: " + pokemonNameValue);
         System.out.println("Pokemon Weight: " + pokemonWeightValue);
         System.out.println("Best Pokemon Ability: " + abilityValue);
